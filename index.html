@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" id="signUp-form">
+        <label>
+            Email <span class="required">*</span>
+            <input required type="email" placeholder="Введите email...">
+        </label>
+        <br>
+        <label>
+            Password <span class="required">*</span>
+            <input required type="password" placeholder="Enter the password...">
+        </label>
+        <br>
+        Your age:
+        <br>
+        <input id="age1" type="radio" name="age" value="0-18">
+        <label for="age1">0-18</label>
+        <br>
+        <input id="age2" type="radio" name="age" value="19-50">
+        <label for="age2">19-50</label>
+        <br>
+        <input id="age3" type="radio" name="age" value="50+">
+        <label for="age3">50+</label>
+        <br>
+        <label>
+            Способ связи с нами:
+            <select name="contact" form="signUp-form">
+                <option value="Phone">По телефону</option>
+                <option value="Email">По Email</option>
+                <option value="WhatsApp">По WhatsApp</option>
+
+            </select>
+        </label>
+        <br>
+        <input type="color" id="favorite_color" name="color" value="#e66465">
+        <label for="favorite_color">Любимый цвет</label>
+        <br>
+        <input type="range" id="friends_count" name="friends" min="0" max="500">
+        <label for="friends_count">Количество друзей от 0 до 500</label>
+        <br>
+        <input type="date" id="birth_date" name="birthDate" value="1989-07-06" min="1900-01-01" max="2020-01-01">
+        <label for="birth_date">Дата рождения</label>
+        <br>
+        Cогласны с условиями?
+        <br>
+        <input type="checkbox" id="agree1" name="agree_advertising" value="Yes">
+        <label for="agree1">Согласен на рекламу</label>
+        <br>
+        <input type="checkbox" id="agree2" name="agree_terms" value="Yes">
+        <label for="agree2">Согласен с условиями обработки данных</label>
+        <br>
+        <input type="submit" value="Cохранить">
+
+    </form>
+</body>
+
+</html>
